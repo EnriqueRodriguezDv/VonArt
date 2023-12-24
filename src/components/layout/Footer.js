@@ -1,6 +1,6 @@
 import React from "react";
 
-import github from "../../assets/static/github.svg";
+import instagram from "../../assets/static/instagram.png";
 import facebook from "../../assets/static/facebook.svg";
 import linkedIn from "../../assets/static/linkedin.svg";
 import gmail from "../../assets/static/gmail.svg";
@@ -13,20 +13,20 @@ const Footer = () => {
       <nav className="navbar navbar-expand justify-content-center navbar-dark "></nav>
       <div className="row w-100 m-auto">
         <div className="col-12 col-md-6 d-flex justify-content-center p-0 mt-4 mb-5">
-          <a href="https://github.com/EnriqueRodriguezDv" target="_blank">
+          {/* <a href="https://github.com/EnriqueRodriguezDv" target="_blank">
             <img className="mr-4" src={github}></img>
-          </a>
+          </a> */}
           <a
-            href="https://www.facebook.com/Enrique-Rodriguez-Desarrollador-101686708213107"
+            // href="https://www.facebook.com/Enrique-Rodriguez-Desarrollador-101686708213107"
             target="_blank"
           >
             <img className="mr-4" src={facebook}></img>
           </a>
           <a
-            href="https://www.linkedin.com/in/desarrolladorenriquerodriguez/"
+            href="https://www.instagram.com/titavonart/"
             target="_blank"
           >
-            <img src={linkedIn}></img>
+            <img className="footerLogo" src={instagram}></img>
           </a>
         </div>
         <div className="col-12 col-md-6 d-flex align-items-center justify-content-center p-0">
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <div className="row w-100 m-auto">
         <div className="col-12 text-center mt-4 mb-1">
-          <small>Copyright 2020 by Kike Rodríguez</small>
+          <small>Copyright 2023 by Tita Von Chica</small>
         </div>
       </div>
     </footer>

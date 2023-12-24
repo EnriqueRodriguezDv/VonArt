@@ -1,10 +1,7 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-
-import HeaderNewSession from "./HeaderNewSession";
 import HeaderPrincipal from "./HeaderPrincipal";
 
-import logoBank from "../../../assets/static/logoBank.png";
+import logo from "../../../assets/static/logo.jpg";
 
 const Header = () => {
   return (
@@ -12,19 +9,16 @@ const Header = () => {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="navbar-brand">
           <img
-            src={logoBank}
-            width="30"
-            height="30"
+            src={logo}
+            width="45"
+            height="45"
             className="d-inline-block align-top mr-2"
             alt=""
             loading="lazy"
           />
-          Bank Lions
+          Tita Von Art
         </div>
-        <Switch>
-          <Route exact path="/" component={HeaderNewSession} />
-          <Route component={HeaderPrincipal} />
-        </Switch>
+        <HeaderPrincipal />
       </nav>
     </section>
   );

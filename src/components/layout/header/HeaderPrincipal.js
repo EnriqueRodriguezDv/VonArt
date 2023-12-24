@@ -5,21 +5,7 @@ import { addHistory, closeSession, closeMonopolyPlayer } from "../../../action/i
 
 import "../../../assets/styles/components/headerPrincipal.scss";
 
-const HeaderPrincipal = (props) => {
-  const date = new Date();
-
-  const handleClick = () => {
-    props.addHistory({
-      date: `${date.getDay()}/${date.getMonth()}/${date.getUTCFullYear()} ${date.getHours()}:${date.getMinutes()}`,
-      username: props.user.find((item) => item.isOnline).username,
-      move: 0,
-      wallet: props.user.find((item) => item.isOnline).wallet,
-      concept: "Close session",
-    });
-    props.closeMonopolyPlayer();
-    props.closeSession();
-  };
-
+const HeaderPrincipal = () => {
   return (
     <>
       <button
@@ -36,7 +22,7 @@ const HeaderPrincipal = (props) => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/principal">
+            <Link className="nav-link" to="/">
               Home
             </Link>
           </li>
@@ -47,30 +33,33 @@ const HeaderPrincipal = (props) => {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Option User
+              Galerías
             </div>
             <div
               className="dropdown-menu bg-dark m-0"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <Link className="dropdown-item" to="/transfer">
-                Wire Transfer
+              <Link className="dropdown-item" 
+              // to="/transfer"
+              >
+                Dibujos
               </Link>
-              <Link className="dropdown-item" to="/moreMoney">
-                Deposit / Extract
+              <Link className="dropdown-item" 
+              // to="/moreMoney"
+              >
+                Customizaciones
               </Link>
-              <Link className="dropdown-item" to="/monopoly">
-                Monopoly Card
+              <Link className="dropdown-item" 
+              // to="/monopoly"
+              >
+                Limpiezas faciales
               </Link>
-              <Link className="dropdown-item" to="/history">
-                History
+              <Link className="dropdown-item" 
+              // to="/history"
+              >
+                Otros
               </Link>
             </div>
-          </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-link" onClick={handleClick}>
-              Close Session
-            </Link>
           </li>
         </ul>
       </div>

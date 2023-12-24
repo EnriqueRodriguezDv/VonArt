@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     open: true,
     historyApiFallback: true,
-    host: "192.168.100.2",
+    // host: "192.168.100.2",
     disableHostCheck: true,
   },
   devtool: "inline-source-map",

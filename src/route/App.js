@@ -15,8 +15,8 @@ const App = () => {
     <HashRouter forceRefresh="true">
       <Layout>
         <Switch>
-          <Route exact path="/" component={NewSession} />
-          <Route exact path="/principal" component={Principal} />
+          {/* <Route exact path="/" component={NewSession} /> */}
+          <Route exact path="/" component={Principal} />
           <Route exact path="/transfer" component={Transfer} />
           <Route exact path="/moreMoney" component={Deposit} />
           <Route exact path="/monopoly" component={Monopoly} />

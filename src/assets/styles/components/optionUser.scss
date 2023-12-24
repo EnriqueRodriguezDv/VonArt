@@ -36,8 +36,9 @@
       justify-content: center;
       align-items: center;
       transition: 0.6s;
-      text-shadow: 2px 2px black;
-      color: #e88f05;
+      text-shadow: 0 0px black;
+      color: black;
+      font-size: 30px;
       margin: 0;
 
       &:hover {

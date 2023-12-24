@@ -2,6 +2,20 @@ li {
   cursor: pointer;
 }
 
+.navbar-brand{  
+  font-family: 'whisper', 'sans-serif';
+  font-size: 30px;
+
+  img{
+    border-radius: 5px;
+  }
+}
+
+.dropdown-menu{
+  right: 0;
+  left: auto;
+}
+
 .cursor-show:hover {
   div {
     display: block;
